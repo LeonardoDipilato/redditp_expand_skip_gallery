@@ -874,7 +874,7 @@ $(function () {
     var skipGallery = async function () { 
         photo = rp.photos[rp.session.activeIndex];  
         if (!photo.data.is_gallery){
-            return
+            nextSlide();
         }
         var skipCount = (photo.galleryTotal - photo.galleryItem)+1
         nextSlide(skipCount)
