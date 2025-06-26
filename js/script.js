@@ -875,6 +875,7 @@ $(function () {
         photo = rp.photos[rp.session.activeIndex];  
         if (!photo.data.is_gallery){
             nextSlide();
+            return;
         }
         var skipCount = (photo.galleryTotal - photo.galleryItem)+1
         nextSlide(skipCount)
